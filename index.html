@@ -317,6 +317,7 @@
 
       .v7m2fsy {
         width: 100%;
+        height: 100%;
         /* Responsive width */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         position: fixed;
@@ -563,6 +564,11 @@
             behavior: "smooth" // enables smooth scrolling
           });
         }
+      </script>
+      <script>
+        window.onload = function() {
+          window.scrollTo(0, 0); // Scroll to the top of the page when it loads
+        };
       </script>
     </div>
   </body>
