@@ -100,18 +100,19 @@
 
       /* Main Content */
       .mj3kc8vfy7 {
-        max-width: 687px;
+        max-width: 80%;
         margin: 1.25rem auto;
         padding: 1.25rem;
         background: rgba(30, 42, 56, 0.7);
         border-radius: 25px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        position: relative;
       }
 
       .t2kmoxc9yh {
         color: #70a7f3;
         border-bottom: 1.88px solid #70a7f3;
-        padding-bottom: 0.31rem;
+        padding-bottom: 0.5rem;
         margin-bottom: 0.63rem;
       }
 
@@ -137,8 +138,9 @@
       }
 
       .lsq1f8vmay h3 {
+        max-width: 80%;
         cursor: pointer;
-        margin: 0.31rem 0;
+        margin: 0.31rem auto;
         padding: 0.63rem;
         background: #1e88e5;
         color: #fff;
@@ -297,158 +299,271 @@
         }
       }
     </style>
+    <style>
+      .n7be1jc {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 200vh;
+        /* Allow scrolling by making the page taller */
+        background: #121212;
+        /* Black to blue gradient */
+        background-attachment: fixed;
+        /* Background stays fixed */
+        overflow: auto;
+        /* Allows scrolling */
+        position: relative;
+      }
+
+      .v7m2fsy {
+        width: 100%;
+        /* Responsive width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        /* Fix the content box in place */
+        top: 50%;
+        /* Center content box vertically */
+        left: 50%;
+        /* Center content box horizontally */
+        transform: translate(-50%, -50%);
+        /* Adjust for exact centering */
+        z-index: 1;
+        color: #e0e0e0;
+        border-radius: 25px;
+        background-attachment: fixed;
+        position: fixed;
+        /* Fix the content in place */
+      }
+
+      .u5f3rta {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        margin-bottom: 20px;
+        height: 300px;
+        /* Height for smooth transition */
+        display: none;
+        /* Hide all initially */
+      }
+
+      .l8yfrwp {
+        opacity: 1;
+        transform: translateY(0);
+        display: block;
+      }
+
+      .m3s4kxo {
+        border-bottom: 1.88px solid #70a7f3;
+        color: #70a7f3;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        /* Centers text horizontally */
+        display: flex;
+        /* Enables flexbox */
+        justify-content: center;
+        /* Centers content horizontally within the parent */
+        align-items: center;
+        /* Centers content vertically within the parent */
+        /* Optional: Makes the container take up the full height of the viewport */
+      }
+
+      .u5f3rta {
+        font-size: .9em;
+        /* Standard font size for content */
+        color: #ffffff;
+        /* Set content text color */
+        line-height: 1.6;
+        /* Adjust line height for readability */
+        max-width: 90%;
+        margin: 0 auto;
+        /* This centers the element horizontally */
+      }
+    </style>
   </head>
   <body>
-    <canvas id="backgroundCanvas"></canvas>
-    <header class="jv45k">
-      <a href="/" style="text-decoration: none; color: inherit;">
-        <h1 class="playfair-title">IThink Academy</h1>
-        <p class="header-outline">Initializing Thinkers in Engaging and Creative Ways!</p>
-      </a>
-    </header>
-    <nav class="h8jf2">
-      <a href="/Courses">Courses</a>
-      <a href="/Games">Games</a>
-      <a href="/#projects">Projects</a>
-      <a href="/Pricing">Pricing</a>
-      <a href="/Contact">Contact Us</a>
-    </nav>
-    <div class="stylebody">
-      <header class="xhj2ui5sh1">
-        <h1>Projects</h1>
+    <div class="v7m2fsy">
+      <canvas id="backgroundCanvas"></canvas>
+      <header class="jv45k">
+        <a href="/" style="text-decoration: none; color: inherit;">
+          <h1 class="playfair-title">IThink Academy</h1>
+          <p class="header-outline">Initializing Thinkers in Engaging and Creative Ways!</p>
+        </a>
       </header>
-      <nav class="p7ld8q9xnv">
-        <a href="#about">About</a>
-        <a href="#why">Why Choose Us</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#faq">FAQs</a>
+      <nav class="h8jf2">
+        <a href="/Courses">Courses</a>
+        <a href="/Games">Games</a>
+        <a href="/#projects">Projects</a>
+        <a href="/Pricing">Pricing</a>
+        <a href="/Contact">Contact Us</a>
       </nav>
-      <main class="mj3kc8vfy7">
-        <section id="about">
-          <h2 class="t2kmoxc9yh">About Our Projects</h2>
-          <p class="ukb8rf0loq">At <strong>Initializing Thinking</strong>, we specialize in creating opportunities for kids to explore programming through engaging, hands-on projects. These fun and interactive tasks are designed to align with each child's skill level and natural curiosity. </p>
-          <p class="ukb8rf0loq">Whether your child is just starting out or already has some experience, our projects are structured to encourage critical thinking and creativity, helping them apply what they learn in exciting, real-world scenarios.</p>
-          <p class="ukb8rf0loq">We focus on building confidence and problem-solving abilities so that every young learner feels accomplished while developing meaningful skills.</p>
-        </section>
-        <section id="why">
-          <h2 class="t2kmoxc9yh">Why Choose Our Projects?</h2>
-          <ul class="c0rnzgk1tx">
-            <li>
-              <strong>Personalized Learning:</strong> Each project is designed with kids in mind, offering the right level of challenge to keep them motivated and engaged.
-            </li>
-            <li>
-              <strong>Encouraging Independence:</strong> Children learn to manage their time, set goals, and solve problems on their own, fostering a sense of achievement and self-reliance.
-            </li>
-            <li>
-              <strong>Supportive Community:</strong> Kids can connect with peers and mentors in a safe environment, sharing ideas, getting feedback, and finding inspiration.
-            </li>
-            <li>
-              <strong>Expert Mentors:</strong> Our instructors provide regular feedback and gentle guidance to help children achieve their goals while having fun.
-            </li>
-          </ul>
-        </section>
-        <section id="benefits">
-          <h2 class="t2kmoxc9yh">The Benefits of Our Approach</h2>
-          <ul class="c0rnzgk1tx">
-            <li>
-              <strong>Build Cool Projects:</strong> Kids get to create games, animations, and other exciting projects they can proudly share with friends and family.
-            </li>
-            <li>
-              <strong>Gain Practical Skills:</strong> Our projects mimic real-world challenges, helping children develop logic, creativity, and resilience.
-            </li>
-            <li>
-              <strong>Boost Confidence:</strong> Completing projects empowers kids to take on new challenges with a can-do attitude.
-            </li>
-            <li>
-              <strong>Prepare for the Future:</strong> By learning programming early, kids gain a head start in a digital world, setting them up for future success.
-            </li>
-          </ul>
-        </section>
-        <section id="faq" class="lsq1f8vmay">
-          <h2 class="t2kmoxc9yh">FAQs</h2>
-          <h3 onclick="toggleAnswer(1)">What if my child gets stuck on a project?</h3>
-          <div id="answer1" class="q95o4vfnmr">
-            <p>We’re here to help! Kids can reach out to mentors or peers through our safe messaging server for tips, guidance, and encouragement whenever they feel stuck.</p>
-          </div>
-          <h3 onclick="toggleAnswer(2)">Can my child work on more than one project?</h3>
-          <div id="answer2" class="q95o4vfnmr">
-            <p>Absolutely! If your child is ready for a new challenge, they can explore multiple projects at their own pace, expanding their learning and creativity.</p>
-          </div>
-          <h3 onclick="toggleAnswer(3)">Are there deadlines for the projects?</h3>
-          <div id="answer3" class="q95o4vfnmr">
-            <p>Each project has a deadline to help students stay on pace, but we are committed to ensuring they meet their goals. Our instructors will regularly check in with them to provide guidance and keep them on track.</p>
-          </div>
-        </section>
-      </main>
-      <div style="display: grid; place-items: center; padding-bottom: 30px; padding-top: 10px;">
-        <a href="/Contact" class="contact-button">Contact Us</a>
+      <div class="stylebody">
+        <header class="xhj2ui5sh1">
+          <h1>Projects</h1>
+        </header>
+        <nav class="p7ld8q9xnv">
+          <a href="javascript:void(0);" onclick="scrollToPosition(0)">About</a>
+          <a href="javascript:void(0);" onclick="scrollToPosition(500)">Why Choose Us</a>
+          <a href="javascript:void(0);" onclick="scrollToPosition(1000)">Benefits</a>
+        </nav>
+        <main class="mj3kc8vfy7">
+          <body class="n7be1jc">
+            <div>
+              <p class="u5f3rta">
+                <span class="m3s4kxo">
+                  <strong>About Our Projects</strong>
+                </span>
+                <br> At <strong>Initializing Thinking</strong>, we specialize in creating opportunities for kids to explore programming through engaging, hands-on projects. These fun and interactive tasks are designed to align with each child's skill level and natural curiosity. <br>
+                <br> Whether your child is just starting out or already has some experience, our projects are structured to encourage critical thinking and creativity, helping them apply what they learn in exciting, real-world scenarios. <br>
+                <br> We focus on building confidence and problem-solving abilities so that every young learner feels accomplished while developing meaningful skills.
+              </p>
+              <p class="u5f3rta">
+                <span class="m3s4kxo">
+                  <strong>Why Choose Our Projects?</strong>
+                </span>
+                <br>
+                <strong>Personalized Learning:</strong> Each project is designed with kids in mind, offering the right level of challenge to keep them motivated and engaged. <br>
+                <br>
+                <strong>Encouraging Independence:</strong> Children learn to manage their time, set goals, and solve problems on their own, fostering a sense of achievement and self-reliance. <br>
+                <br>
+                <strong>Supportive Community:</strong> Kids can connect with peers and mentors in a safe environment, sharing ideas, getting feedback, and finding inspiration. <br>
+                <br>
+                <strong>Expert Mentors:</strong> Our instructors provide regular feedback and gentle guidance to help children achieve their goals while having fun.
+              </p>
+              <p class="u5f3rta">
+                <span class="m3s4kxo">
+                  <strong>The Benefits of Our Approach</strong>
+                </span>
+                <br>
+                <strong>Build Cool Projects:</strong> Kids get to create games, animations, and other exciting projects they can proudly share with friends and family. <br>
+                <br>
+                <strong>Gain Practical Skills:</strong> Our projects mimic real-world challenges, helping children develop logic, creativity, and resilience. <br>
+                <br>
+                <strong>Boost Confidence:</strong> Completing projects empowers kids to take on new challenges with a can-do attitude. <br>
+                <br>
+                <strong>Prepare for the Future:</strong> By learning programming early, kids gain a head start in a digital world, setting them up for future success.
+              </p>
+              <section id="faq" class="lsq1f8vmay">
+                <h2 class="t2kmoxc9yh"></h2>
+                <h2 class="t2kmoxc9yh">FAQs</h2>
+                <h3 onclick="toggleAnswer(1)">What if my child gets stuck on a project?</h3>
+                <div id="answer1" class="q95o4vfnmr">
+                  <p>We’re here to help! Kids can reach out to mentors or peers through our safe messaging server for tips, guidance, and encouragement whenever they feel stuck.</p>
+                </div>
+                <h3 onclick="toggleAnswer(2)">Can my child work on more than one project?</h3>
+                <div id="answer2" class="q95o4vfnmr">
+                  <p>Absolutely! If your child is ready for a new challenge, they can explore multiple projects at their own pace, expanding their learning and creativity.</p>
+                </div>
+                <h3 onclick="toggleAnswer(3)">Are there deadlines for the projects?</h3>
+                <div id="answer3" class="q95o4vfnmr">
+                  <p>Each project has a deadline to help students stay on pace, but we are committed to ensuring they meet their goals. Our instructors will regularly check in with them to provide guidance and keep them on track.</p>
+                </div>
+              </section>
+        </main>
+        <div style="display: grid; place-items: center; padding-bottom: 30px; padding-top: 10px;">
+          <a href="/Contact" class="contact-button">Contact Us</a>
+        </div>
+        <footer class="xhj2ui5sh1"></footer>
+        <script>
+          // Smooth scrolling to sections
+          document.querySelectorAll('.p7ld8q9xnv a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+              e.preventDefault(); // Prevent default anchor behavior
+              const targetId = this.getAttribute('href').slice(1); // Get the section ID
+              const targetSection = document.getElementById(targetId);
+              if (targetSection) {
+                targetSection.scrollIntoView({
+                  behavior: 'smooth', // Smooth scrolling
+                  block: 'center' // Center the section vertically
+                });
+              }
+            });
+          });
+          // FAQ toggle functionality
+          function toggleAnswer(id) {
+            const answer = document.getElementById(`answer${id}`);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+          }
+        </script>
+        <script>
+          const p7k2fgr = document.querySelectorAll('.u5f3rta');
+
+          function checkScrollPosition() {
+            // Get the scroll position and the document height
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            // Get the scroll thresholds for top, middle, and bottom thirds
+            const topThreshold = 2 * documentHeight / 3;
+            const middleThreshold = 3.5 * documentHeight / 4;
+            // Hide all paragraphs
+            p7k2fgr.forEach(p => p.classList.remove('l8yfrwp'));
+            // Show paragraphs based on scroll position
+            if (scrollPosition <= topThreshold) {
+              p7k2fgr[0].classList.add('l8yfrwp'); // First paragraph
+            } else if (scrollPosition > topThreshold && scrollPosition <= middleThreshold) {
+              p7k2fgr[1].classList.add('l8yfrwp'); // Second paragraph
+            } else if (scrollPosition > middleThreshold) {
+              p7k2fgr[2].classList.add('l8yfrwp'); // Third paragraph
+            }
+          }
+          // Initial check
+          checkScrollPosition();
+          // Scroll event listener
+          window.addEventListener('scroll', checkScrollPosition);
+        </script>
       </div>
-      <footer class="xhj2ui5sh1"></footer>
+      <footer class="v3cns">
+        <p>Contact Us: <a href="mailto:initiatingthinkers@gmail.com" style="color: #e0f7fa;">InitiatingThinkers@gmail.com</a>
+        </p>
+        <p>Follow us on social media for updates and new content!</p>
+      </footer>
       <script>
-        // Smooth scrolling to sections
-        document.querySelectorAll('.p7ld8q9xnv a').forEach(anchor => {
-          anchor.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default anchor behavior
-            const targetId = this.getAttribute('href').slice(1); // Get the section ID
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-              targetSection.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling
-                block: 'center' // Center the section vertically
-              });
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const stars = [];
+        const numstars = 100;
+        for (let i = 0; i < numstars; i++) {
+          stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            length: Math.random() * 0.5 + 0,
+            angle: Math.random() * Math.PI * 2,
+            speed: Math.random() * 0.7 + 0.1
+          });
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          stars.forEach(star => {
+            const endX = star.x + Math.cos(star.angle) * star.length;
+            const endY = star.y + Math.sin(star.angle) * star.length;
+            ctx.beginPath();
+            ctx.moveTo(star.x, star.y);
+            ctx.lineTo(endX, endY);
+            ctx.strokeStyle = '#42a5f5';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            star.x += Math.cos(star.angle) * star.speed;
+            star.y += Math.sin(star.angle) * star.speed;
+            if (star.x > canvas.width || star.x < 0 || star.y > canvas.height || star.y < 0) {
+              star.x = Math.random() * canvas.width;
+              star.y = Math.random() * canvas.height;
             }
           });
-        });
-        // FAQ toggle functionality
-        function toggleAnswer(id) {
-          const answer = document.getElementById(`answer${id}`);
-          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+          requestAnimationFrame(draw);
+        }
+        draw();
+      </script>
+      <script>
+        function scrollToPosition(scrollValue) {
+          window.scrollTo({
+            top: scrollValue, // the pixel value where you want to scroll
+            behavior: "smooth" // enables smooth scrolling
+          });
         }
       </script>
     </div>
-    <footer class="v3cns">
-      <p>Contact Us: <a href="mailto:initiatingthinkers@gmail.com" style="color: #e0f7fa;">InitiatingThinkers@gmail.com</a>
-      </p>
-      <p>Follow us on social media for updates and new content!</p>
-    </footer>
-    <script>
-      const canvas = document.getElementById('backgroundCanvas');
-      const ctx = canvas.getContext('2d');
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      const stars = [];
-      const numstars = 100;
-      for (let i = 0; i < numstars; i++) {
-        stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          length: Math.random() * 0.5 + 0,
-          angle: Math.random() * Math.PI * 2,
-          speed: Math.random() * 0.7 + 0.1
-        });
-      }
-
-      function draw() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        stars.forEach(star => {
-          const endX = star.x + Math.cos(star.angle) * star.length;
-          const endY = star.y + Math.sin(star.angle) * star.length;
-          ctx.beginPath();
-          ctx.moveTo(star.x, star.y);
-          ctx.lineTo(endX, endY);
-          ctx.strokeStyle = '#42a5f5';
-          ctx.lineWidth = 2;
-          ctx.stroke();
-          star.x += Math.cos(star.angle) * star.speed;
-          star.y += Math.sin(star.angle) * star.speed;
-          if (star.x > canvas.width || star.x < 0 || star.y > canvas.height || star.y < 0) {
-            star.x = Math.random() * canvas.width;
-            star.y = Math.random() * canvas.height;
-          }
-        });
-        requestAnimationFrame(draw);
-      }
-      draw();
-    </script>
   </body>
 </html>
