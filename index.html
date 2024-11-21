@@ -376,6 +376,26 @@
         margin: 0 auto;
         /* This centers the element horizontally */
       }
+
+      /* Define a fade-in animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translatez(20px);
+          /* Slide from below */
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Apply the animation to elements with class .l8yfrwp */
+      .l8yfrwp {
+        animation: fadeIn .5s ease-out;
+        /* 1s duration and easing */
+      }
     </style>
   </head>
   <body>
@@ -461,8 +481,6 @@
           <a href="/Contact" class="contact-button">Contact Us</a>
         </div>
       </div>
-
-      
       <footer class="xhj2ui5sh1" style="position: absolute; top: 91vh; width: 100vw;"></footer>
       <footer class="v3cns" style="position: absolute; top: 92vh; width:100%">
         <p>Contact Us: <a href="mailto:initiatingthinkers@gmail.com" style="color: #e0f7fa;">InitiatingThinkers@gmail.com</a>
